@@ -183,11 +183,11 @@ console.log("Q11: " + answer11)
 // EXAMPLE OUTPUT:
 //  Q12: Welcome to Code the Dream!
 
-function messageString(message) {
-    return `${message} to Code the Dream!`;
+function messageString() {
+    let message = "Welcome to Code the Dream"
+    return message
 }
-
-console.log(messageString("Q12: Welcome"))
+console.log("Q12: ", messageString())
 
 // ---------- QUESTION 13 ----------
 // Create a function called 'combineStrings'. Inside the function, declare two variables named 'string1' and 'string2'. Assign them the strings 'Good' and 'Evening' respecitvely. Return the two strings concatenated with a space in between.
@@ -197,11 +197,13 @@ console.log(messageString("Q12: Welcome"))
 // EXAMPLE OUTPUT:
 //  Q13: Good Evening
 
-function combineStrings(string1, string2) {
+function combineStrings() {
+    let string1 = "Good"
+    let string2 = "Evening"
     let greeting = string1 + " " + string2;
     return greeting;
 }
-console.log("Q13:", combineStrings("Good", "Evening"))
+console.log("Q13:", combineStrings())
 
 // ---------- QUESTION 14 ----------
 // Let's start working with parameters. Create a function called 'useParams' that takes one parameter and returns that parameter with the all letters capitalized.
