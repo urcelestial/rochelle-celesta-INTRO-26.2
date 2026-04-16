@@ -403,6 +403,7 @@ function testScope() {
 
     console.log("Q15: Inside function - Global:", globalVar);
     console.log("Q15: Inside function - Function:", functionVar);
-
+    // console.log("Q15: Outside block - Block:", blockVar);
 }
 testScope();
+// console.log("Q15: Outside function - Function:", functionVar);
