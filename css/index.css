@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(219, 88, 107)
+}
+
+* {
+    font-family: arial, helvetica, sans-serif
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+#About {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(169, 192, 241);
+}
+
+li {
+    list-style: none;
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    border-color: rgb(95, 214, 68);
+    display: inline-block;
+}
+
+
+#Experience ul {
+    padding: 0;
+}
+
+#Experience li {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    color: black;
+}
+
+
+#Experience li p {
+    flex-basis: 100%; 
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(134, 33, 33);
+}
+
+.job-date {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #200202;
+}
+
+.job-description {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+#Connect a {
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#Connect ul {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
