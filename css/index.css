@@ -98,7 +98,7 @@ li {
     padding: 0;
 }
 
-#Skills ul {
+#skills ul {
     display: flex;
     justify-content: center; 
     gap: 20px;
@@ -107,7 +107,7 @@ li {
     justify-content: center;
 }
 
-#Skills li {
+#skills li {
     background-color: white;
     padding: 15px 25px;
     border-radius: 5px;
@@ -116,7 +116,7 @@ li {
 }
 
 @media (max-width: 600px) {
-    #Skills ul {
+    #skills ul {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
