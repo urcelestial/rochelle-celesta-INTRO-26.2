@@ -97,3 +97,28 @@ li {
     list-style: none;
     padding: 0;
 }
+
+#Skills ul {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+#Skills li {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: peru;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    #Skills ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
