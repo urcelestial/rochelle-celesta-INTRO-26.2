@@ -57,13 +57,10 @@ messageForm.addEventListener('submit', function(event) {
 fetch('https://api.github.com/users/urcelestial/repos')
     .then(function(response) {
         return response.json();
+    })
     .then(function(repositories) {
         console.log("repositories:", repositories);
-    })
-
-    .catch(function(error) {
-        console.log("Error fetching repositories:", error);
-    });
+        
         const projectSection = document.getElementById('projects');
         const projectList = projectSection.querySelector('ul');
 
@@ -72,4 +69,8 @@ fetch('https://api.github.com/users/urcelestial/repos')
             project.innerText = repositories[i].name;
             projectList.appendChild(project);
         }
+    });
+
+    .catch(function(error) {
+        console.log("Error fetching repositories:", error);
     });
