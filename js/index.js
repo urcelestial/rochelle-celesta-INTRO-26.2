@@ -54,12 +54,12 @@ messageForm.addEventListener('submit', function(event) {
 
 });
 
-fetch(https:/api.github.com/users/urcelestial/repos)
+fetch('https://api.github.com/users/urcelestial/repos')
     .then(function(response) {
         return response.json();
-    })
     .then(function(repositories) {
         console.log("repositories:", repositories);
+    })
 
     .catch(function(error) {
         console.log("Error fetching repositories:", error);
