@@ -60,7 +60,7 @@ fetch('https://api.github.com/users/urcelestial/repos')
     })
     .then(function(repositories) {
         console.log("repositories:", repositories);
-        
+
         const projectSection = document.getElementById('projects');
         const projectList = projectSection.querySelector('ul');
 
@@ -69,7 +69,7 @@ fetch('https://api.github.com/users/urcelestial/repos')
             project.innerText = repositories[i].name;
             projectList.appendChild(project);
         }
-    });
+    })
 
     .catch(function(error) {
         console.log("Error fetching repositories:", error);

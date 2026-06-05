@@ -114,7 +114,7 @@ form[name="leave_message"] button {
     border-radius: 6px;
 }
 
-#Projects ul {
+#projects ul {
     list-style-type: none;
     padding: 0;
     margin: 20px 0;
@@ -126,7 +126,7 @@ form[name="leave_message"] button {
 }
 
 
-Projects li {
+#projects li {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
