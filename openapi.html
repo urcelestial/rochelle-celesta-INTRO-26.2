@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title> Rochelle Celesta's API Explorer </title>
+       <meta http-equiv="refresh" content="30">
+       <meta name="description" content="Code the Dream Assignment">
+    <link rel="stylesheet" href="css/openapi.css">
+    </head>
+
+    <body>
+        <h1>GitHub API Explorer</h1>
+        <h2>Explore my Github Profile by clicking the button below</h2>
+
+        <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+        </nav> 
+        
+        <main>
+            <div class="api-container">
+                <button id="fetch-profile">Fetch GitHub Profile</button>
+                <button id="fetch-repos">Fetch GitHub Repositories</button>
+            </div>
+
+            <section id="profile-section">
+                <h2>GitHub Profile</h2>
+                <div id="profile-info"></div>
+            </section>
+
+            <section id="repos-section">
+                <h2>GitHub Repositories</h2>
+                <div id="repos-info"></div>
+            </section>
+        </main>
+        <script src="js/openapi.js"></script>
+    </body>
+</html>
