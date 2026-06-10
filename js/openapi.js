@@ -12,10 +12,12 @@ async function fetchGithubProfile() {
         const data = await response.json();
         console.log("Profile Data:", data);
         profileInfo.innerHTML = `
-            <h2>${data.name}</h2>
+        <div class="profile-card">
+            <h3>${data.name}</h3>
             <img src="${data.avatar_url}" alt="Profile Picture" width="150">
             <p>${data.bio}</p>
             <p>Followers: ${data.followers} | Following: ${data.following}</p>
+        </div>
         `;
     } catch (error) {
         console.error("Error fetching profile:", error);
@@ -28,7 +30,7 @@ async function fetchGithubRepos() {
         const response = await fetch('https://api.github.com/users/urcelestial/repos');
         const repos = await response.json();
         console.log("Repositories:", repos);
-        reposInfo.innerHTML = '<h2>Repositories</h2>';
+        reposInfo.innerHTML = '';
         const repoList = document.createElement('ul');
         repos.forEach(repo => {
             const listItem = document.createElement('li');
