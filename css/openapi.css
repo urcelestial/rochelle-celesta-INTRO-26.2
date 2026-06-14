@@ -3,7 +3,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #4ab6de;
+    background-color: #29c6ff;
     color: rgb(70, 9, 60);
 }
 
@@ -36,7 +36,7 @@ nav ul {
 }
 
 .label {
-    background-color: #c17bf6;
+    background-color: rgb(178, 166, 255);
     padding: 8px 16px;
     border-radius: 4px;
     color: white;
@@ -58,7 +58,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 30px 0;
+    margin: 10px;
 }
 
 button {
@@ -87,7 +87,7 @@ button:active {
     padding: 10px;
     border-radius: 8px;
     margin-bottom:15px;
-    margin-top: 0px;
+    margin-top: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -95,14 +95,34 @@ button:active {
     border: 4px solid #2c3e50;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 150px;
+}
+
+#repos-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
 }
 
 #repos-info ul li {
     background: #f8f9fa;
     padding: 12px;
-    margin: 8px 0;
+    margin-bottom: 80px;
     border-radius: 4px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#profile-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 80px;
 }
